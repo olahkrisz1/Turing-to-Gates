@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.header {
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: coral;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 10px 0px;
+  box-shadow: 20px 20px 10px #888888;
+  border: 2px solid black;
+}
+
+#container {
+  width: 800px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 20px 20px 10px #888888;
+  border: 1px solid black;
+  align-items: center;
+  background-image: url("./images/binary-code.jpg");
+}

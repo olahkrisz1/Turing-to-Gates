@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuringToGates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <h1>Turing to Gates</h1>
+            <h3>click on the pictures</h3>
+        </header>
+    </div>
+    <div id="container">
+        <img src="./images/1a.jpg" alt-pic="./images/1b.jpg" width="500px">
+        <img src="./images/2a.jpg" alt-pic="./images/2b.jpg" width="500px">
+        <img src="./images/3a.jpg" alt-pic="./images/3b.jpg" width="500px">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                let src = $(this).attr("alt-pic");
+                $(this).attr("src", src);
+            });
+
+
+        })
+    </script>
+</body>
+
+</html>
